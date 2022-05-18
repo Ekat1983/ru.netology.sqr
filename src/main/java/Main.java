@@ -1,7 +1,11 @@
+import ru.netology.sqr.SQRService;
+
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println("Hello, Maven!");
-    }
-}
+        SQRService service = new SQRService();
+        int result = service.calculateTheSquare(200, 300);
 
+        System.out.println(result);
+    }
+
+}

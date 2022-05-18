@@ -1,4 +1,6 @@
-public class BonusService1 {
+package ru.netology.sqr;
+
+public class BonusService {
 
     public long calculate(long amount, boolean registered) {
         int percent = registered ? 3 : 1;

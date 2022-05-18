@@ -1,13 +1,14 @@
+package ru.netology.sqr;
 
 import com.sun.nio.sctp.Association;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BonusServiceTest1 {
+public class BonusServiceTest {
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForRegisteredAndUnderLimit() {
-        BonusService1 service = new BonusService1();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 1000_60;
@@ -23,7 +24,7 @@ public class BonusServiceTest1 {
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForRegisteredAndOverLimit() {
-        BonusService1 service = new BonusService1();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 1_000_000_60;
@@ -39,7 +40,7 @@ public class BonusServiceTest1 {
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForZeroAmount() {
-        BonusService1 service = new BonusService1();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = 0;
@@ -55,7 +56,7 @@ public class BonusServiceTest1 {
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForNegativeAmount() {
-        BonusService1 service = new BonusService1();
+        BonusService service = new BonusService();
 
         // подготавливаем данные:
         long amount = -100000;
