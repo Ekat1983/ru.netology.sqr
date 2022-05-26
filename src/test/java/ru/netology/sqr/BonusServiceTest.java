@@ -1,7 +1,5 @@
 package ru.netology.sqr;
 
-import com.sun.nio.sctp.Association;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BonusServiceTest {
